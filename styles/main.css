@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none; /* Hidden by default */
+    margin: 20px auto; /* Center the loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.action-box {
+    background: #fff;
+    padding: 20px;
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.btn, .btn-edit, .btn-create {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background: #4CAF50;
+}
+
+.btn-create {
+    background: #008CBA;
+}
+
+.program-interface {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-area, .aim-area {
+    width: 48%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.program-controls {
+    margin: 20px 0;
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.btn-primary {
+    background: #4CAF50;
+}
+
+.btn-danger {
+    background: #f44336;
+}
+
+pre {
+    background: #f0f0f0;
+    padding: 10px;
+    overflow-x: auto;
+}
